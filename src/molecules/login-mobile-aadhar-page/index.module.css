@@ -3,14 +3,16 @@
   width: 100vw;
   height: 100vh;
 }
-
-.leftColumn {
-  margin: 0;
-  flex: 1;
+.logo{
+  margin-bottom: 100px;
 }
 
-.logo {
-  padding: 20px;
+.leftColumn {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; 
+  height: 100vh;
 }
 
 .rightColumn {
