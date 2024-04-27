@@ -1,7 +1,5 @@
 import styles from './index.module.css'
 import { useCallback, useRef, useState } from 'react'
-import SendIcon from './assets/sendButton.png'
-import WeatherIcon from './assets/weather_advisory.png'
 import toast from 'react-hot-toast'
 
 import { useColorPalates } from '../../molecules/theme-provider/hooks'
@@ -47,9 +45,9 @@ const HomePage = () => {
                 <div
                   className={styles.imgBtn}
                   key={index}
-                  onClick={() => console.log('clicked')}
+                  onClick={() => console.log("clicked")}
                 >
-                  <img src={btn?.image || WeatherIcon} alt={btn?.title} />
+                  <img src={btn.image} alt={btn?.title} />
                   <p>{btn?.title}</p>
                 </div>
               ))}
@@ -73,7 +71,7 @@ const HomePage = () => {
             />
             <button type="submit" className={styles.sendButton}>
               <img
-                src={SendIcon}
+                src={config.sendButtonImage}
                 width={50}
                 height={50}
                 alt="sendIcon"
@@ -84,6 +82,6 @@ const HomePage = () => {
         </form>
       </div>
     </>
-  )
+  );
 }
 export default HomePage
